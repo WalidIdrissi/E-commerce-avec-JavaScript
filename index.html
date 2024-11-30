@@ -5,16 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <link rel="icon" href="/img/logo.png">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/img/tag.png">
 
 
 </head>
 
 <body>
 
+    <header id="header">
+        <a href="index.html"><img src="/img/logo.png" alt="logo" width="35px"></a>
+        <nav>
+            <ul id="navbar">
+                <li><a href="/subpages/home.html" class="active">Home</a></li>
+                <li><a href="/subpages/shop.html">Shop</a></li>
+                <li><a href="/subpages/blog.html">Blog</a></li>
+                <li><a href="/subpages/about.html">About</a></li>
+                <li><a href="/subpages/contact.html">Contact</a></li>
+                <li><a href="/subpages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </nav>
+        <!-- Mobile -->
+        <div id="mobile">
+            <a href="/subpages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="slider">
+        <div class="slide active">
+            <div id="img-slider">
+                <img src="/img/img1.jpg" alt="Image Slider">
+                <div class="info">
+                    <h4 class="select-none">Offre commerciale 1</h4>
+                    <h2 class="select-none">Offres de super valeur</h2>
+                    <h2 class="select-none">Sur tous les produits</h2>
+                    <p class="select-none">Economisez plus avec des coupons et jusqu'à 70 % de réduction !</p>
+                    <button>Afficher maintenant</button>
+                </div>
+            </div>
+            <div id="img-slider">
+                <img src="/img/img2.jpg" alt="Image Slider">
+                <div class="info">
+                    <h4 class="select-none">Offre commerciale 2</h4>
+                    <h2 class="select-none">Offres des téléphones</h2>
+                    <h2 class="select-none">Sur tous les produits</h2>
+                    <p class="select-none">Economisez plus avec des coupons et jusqu'à 70 % de réduction !</p>
+                    <button>Afficher maintenant</button>
+                </div>
+            </div>
+            <div id="img-slider">
+                <img src="/img/img4.jpg" alt="Image Slider">
+                <div class="info">
+                    <h4 class="select-none">Offre commerciale 3</h4>
+                    <h2 class="select-none">Offres des chemises</h2>
+                    <h2 class="select-none">Sur tous les produits</h2>
+                    <p class="select-none">Economisez plus avec des coupons et jusqu'à 70 % de réduction !</p>
+                    <button>Afficher maintenant</button>
+                </div>
+            </div>
+        </div>
+        <div id="button-slider">
+            <button id="button-slider-gauche" onclick="gaucheSlider()">&#10094</button>
+            <button id="button-slider-droite" onclick="droiteSlider()">&#10095</button>
+        </div>
+    </section>
+
+
     <script src="https://kit.fontawesome.com/30778ca8bb.js" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
+
 </body>
 
 </html>
