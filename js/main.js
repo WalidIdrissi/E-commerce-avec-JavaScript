@@ -28,7 +28,7 @@ showSlide(initialeIndex);
 
 setInterval(() => {
   droiteSlider();
-}, 5000);
+}, 8000);
 
 document.querySelector("#toggle-darkmode").addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
