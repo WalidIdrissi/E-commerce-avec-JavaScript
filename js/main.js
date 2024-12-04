@@ -1,18 +1,18 @@
+// images slider
 let initialeIndex = 0;
 const images = document.querySelectorAll("#img-slider img");
 
 function resetSliderStyles(img) {
-    img.classList.remove("active");
-    img.style.opacity = "0";
-    img.style.position = "absolute";
+  img.classList.remove("active");
+  img.style.opacity = "0";
+  img.style.position = "absolute";
 }
 function showSlide(index) {
-    images.forEach(resetSliderStyles);
-    images[index].classList.add("active");
-    images[index].style.opacity = "1";
-    images[index].style.position = "relative";
+  images.forEach(resetSliderStyles);
+  images[index].classList.add("active");
+  images[index].style.opacity = "1";
+  images[index].style.position = "relative";
 }
-
 
 function droiteSlider() {
   initialeIndex = (initialeIndex + 1) % images.length;
@@ -31,5 +31,5 @@ setInterval(() => {
 }, 8000);
 
 document.querySelector("#toggle-darkmode").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("dark-mode");
 });

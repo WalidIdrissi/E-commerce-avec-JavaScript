@@ -231,18 +231,18 @@ button.white:hover {
     user-select: none;
 }
 
-#button-slider {
-    position: absolute;
-    width: 14%;
+#slider .slide #img-slider .info #button-slider {
+    position: relative;
+    width: 24%;
     display: flex;
     justify-content: space-between;
-    margin-top: 40%;
+    margin-top: 10%;
     left: 6.5%;
     transform: translateY(-50%);
     z-index: 2;
 }
 
-#button-slider button {
+#slider .slide #img-slider .info #button-slider button {
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
@@ -667,6 +667,7 @@ footer .col .installe img {
     #slider {
         height: 670px;
         margin-bottom: -400px;
+        position: relative;
     }
 
     #slider .slide #img-slider .info h4,
@@ -681,6 +682,7 @@ footer .col .installe img {
         top: 40%;
         left: 5%;
         max-width: 90%;
+        z-index: 2;
     }
 
     #slider .slide #img-slider .info h4 {
@@ -698,28 +700,35 @@ footer .col .installe img {
     #slider .slide #img-slider .info button {
         padding: 8px 15px;
         font-size: 0.9rem;
+        margin-bottom: 0%;
     }
 
     #slider .slide #img-slider .info .select-none {
         font-size: 0.8rem;
     }
 
-    #button-slider {
-        position: absolute;
+    #slider .slide #img-slider .info #button-slider {
+        position: relative;
         width: 28%;
-        left: 14.5%;
-        margin-top: -27%;
+        left: 12%;
+        margin-top: 10%;
+        top: 32%;
+        z-index: 3;
     }
 
-    #button-slider button {
+    #slider .slide #img-slider .info #button-slider button {
         font-size: 1.3rem;
         padding: 10px 15px;
     }
 
     /* section feature */
+    #feature {
+        margin-top: 0%;
+        position: relative;
+    }
 
     #feature .fe-box {
-        width: 150px;
+        width: 120px;
     }
 
     /* product1 */
@@ -743,6 +752,24 @@ footer .col .installe img {
     #product1 .product-container .pro {
         width: 90%;
         margin: 10px 0;
+    }
+
+    /* section banner */
+
+    #banner {
+        height: 18vh;
+    }
+
+    #banner h4,
+    h2 {
+        font-size: 15px;
+        margin-bottom: 0px;
+        padding: 0%;
+    }
+
+    #banner h2 {
+        padding: 0px;
+        line-height: 1.2;
     }
 
     /* banner3 */
