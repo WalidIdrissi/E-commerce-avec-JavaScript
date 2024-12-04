@@ -341,6 +341,7 @@ button.white:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    user-select: none;
 }
 
 #product1 .product-container .pro {
