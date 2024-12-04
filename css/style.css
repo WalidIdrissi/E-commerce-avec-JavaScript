@@ -679,7 +679,7 @@ footer .col .installe img {
     }
 
     #slider .slide #img-slider .info {
-        top: 40%;
+        top: 50%;
         left: 5%;
         max-width: 90%;
         z-index: 2;
@@ -777,6 +777,11 @@ footer .col .installe img {
     #banner3 .banner-box h4,
     h3 {
         width: 200px;
+    }
+
+    #banner3 .banner-box h4,
+    h3 {
+        font-size: 20px;
     }
 
     /* section newletter */
