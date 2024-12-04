@@ -33,3 +33,15 @@ setInterval(() => {
 document.querySelector("#toggle-darkmode").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
+// header mobile
+
+function barActive() {
+  const navbar = document.getElementById("navbar");
+  navbar.style.right = "0px";
+}
+
+function barDesactive() {
+  const navbar = document.getElementById("navbar");
+  navbar.style.right = "-300px";
+}

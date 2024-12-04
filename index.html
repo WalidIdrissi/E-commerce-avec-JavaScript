@@ -23,18 +23,18 @@
                 <li><a href="./subpages/about.html">About</a></li>
                 <li><a href="./subpages/contact.html">Contact</a></li>
                 <li><a href="./subpages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <i class="fa-solid fa-xmark" id="xmark" onclick="barDesactive()"></i>
             </ul>
         </nav>
         <!-- Mobile -->
         <div id="mobile">
-            <a href="./subpages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="bar" onclick="barActive()"></i>
         </div>
     </header>
 
     <section id="slider">
         <div class="slide active">
+            <div id="img-slider"></div>
             <div id="img-slider">
                 <img src="./img/img4.jpg" alt="Image Slider">
                 <div class="info">
