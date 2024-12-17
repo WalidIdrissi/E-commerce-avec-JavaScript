@@ -26,7 +26,7 @@ function gaucheSlider() {
 
 showSlide(initialeIndex);
 
-setInterval(() => {
+setTimeouty(() => {
   droiteSlider();
 }, 8000);
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>singleproduct</title>
     <link rel="icon" href="./img/logo.png">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -17,7 +17,7 @@
         <a href="index.html"><img src="./img/logo.png" alt="logo" width="35px"></a>
         <nav>
             <ul id="navbar">
-                <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/shop.html">Shop</a></li>
                 <li><a href="/blog.html">Blog</a></li>
                 <li><a href="/about.html">About</a></li>
@@ -31,6 +31,123 @@
             <i class="fa-solid fa-bars" id="bar" onclick="barActive()"></i>
         </div>
     </header>
+
+    <section id="product-details" class="section-p1">
+        <div class="single-product-image">
+            <img src="./img/products/f1.jpg" alt="" width="100%" id="MainImg">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="./img/products/f1.jpg" alt="" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="./img/products/f2.jpg" alt="" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="./img/products/f3.jpg" alt="" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="./img/products/f4.jpg" alt="" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="single-product-details">
+            <h6>Home / T-Shirt</h6>
+            <h4>T-shirt de mode masculin</h4>
+            <h2>99 $</h2>
+            <select>
+                <option value="">Sélectionner la taille</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+                <option value="">Small</option>
+                <option value="">Large</option>
+            </select>
+            <input type="number" value="1" min="1">
+            <button class="normal">Ajouter au panier</button>
+            <h4>Détails du produit</h4>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet magnam in eius quo quas, cumque
+                eligendi fuga et. Aspernatur molestiae odit quas perspiciatis porro recusandae eveniet, in eligendi
+                voluptates beatae.</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>produit en vedette</h2>
+        <p>Collection été nouveau design moderne</p>
+        <div class="product-container">
+            <div class="pro">
+                <img src="./img/products/f1.jpg" alt="">
+                <div class="descreption">
+                    <span>cara</span>
+                    <h5>T-shirts contemporains</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>99 $</h4>
+                </div>
+                <a href="./subpages/cart.html" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="./img/products/f2.jpg" alt="">
+                <div class="descreption">
+                    <span>cara</span>
+                    <h5>T-shirts contemporains</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>110 $</h4>
+                </div>
+                <a href="./subpages/cart.html" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="./img/products/f3.jpg" alt="">
+                <div class="descreption">
+                    <span>cara</span>
+                    <h5>T-shirts contemporains</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>100 $</h4>
+                </div>
+                <a href="./subpages/cart.html" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+            <div class="pro">
+                <img src="./img/products/f4.jpg" alt="">
+                <div class="descreption">
+                    <span>cara</span>
+                    <h5>T-shirts contemporains</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>100 $</h4>
+                </div>
+                <a href="./subpages/cart.html" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <section id="newletter" class="section-p1">
         <h4>Inscrivez-vous pour voir les dernières nouvelles</h4>
@@ -104,6 +221,19 @@
 
     <script src="https://kit.fontawesome.com/30778ca8bb.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+        const MainImg = document.getElementById("MainImg");
+        const smallImgs = document.querySelectorAll(".small-img");
+
+        smallImgs.forEach((img) => {
+            img.addEventListener("click", () => {
+                smallImgs.forEach((e) => e.removeAttribute("id"));
+                MainImg.src = img.src;
+                img.id = "MainImg";
+            });
+        });
+    </script>
 
 </body>
 
